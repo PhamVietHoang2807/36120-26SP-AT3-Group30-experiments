@@ -1,0 +1,52 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "at3_group30_experiments"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "viethoangpham" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "joblib==1.5.3",
+    "jupyterlab==4.6.1",
+    "lightgbm==4.6.0",
+    "lime==0.2.0.1",
+    "loguru",
+    "matplotlib==3.11.0",
+    "mkdocs",
+    "optuna==4.9.0",
+    "pandas==2.2.2",
+    "pip",
+    "python-dotenv",
+    "ruff",
+    "scikit-learn==1.6.1",
+    "tensorflow==2.21.0",
+    "tqdm",
+    "typer",
+    "wandb==0.28.0",
+    "xgboost==3.3.0",
+]
+requires-python = "==3.12.13"
+
+
+[tool.ruff]
+line-length = 99
+src = ["at3_group30_experiments"]
+include = ["pyproject.toml", "at3_group30_experiments/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["at3_group30_experiments"]
+force-sort-within-sections = true
+
