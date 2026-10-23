@@ -189,3 +189,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# Assessment documents
+AML-AT3-Brief.pdf
+AT3_Innovation_Plan.pdf
+AT3_Role_Division.pdf
