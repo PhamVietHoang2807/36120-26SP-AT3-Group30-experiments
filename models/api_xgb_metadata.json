@@ -1,0 +1,43 @@
+{
+  "target": "Asset Performance Index",
+  "target_description": "0-100 score of a cryptocurrency's performance 7 days ahead: 100 x (0.40 x Return Strength + 0.30 x Trend Strength Score + 0.20 x Relative Volume Score + 0.10 x Price Stability).",
+  "algorithm": "XGBoost Regressor",
+  "forecast_horizon": 7,
+  "features": [
+    "Return20",
+    "TrendStrength",
+    "RelativeVolume",
+    "Volatility20",
+    "DailyReturn",
+    "API",
+    "Return5",
+    "Return13"
+  ],
+  "feature_importance": {
+    "Return20": 0.0,
+    "TrendStrength": 0.0836,
+    "RelativeVolume": 0.0207,
+    "Volatility20": 0.0029,
+    "DailyReturn": 0.0098,
+    "API": 0.0209,
+    "Return5": 0.0953,
+    "Return13": 0.7669
+  },
+  "feature_importance_method": "permutation importance on the 2024-2025 test set (MAE)",
+  "metrics": {
+    "test_MAE": 11.288,
+    "test_RMSE": 14.655
+  },
+  "hyperparameters": {
+    "learning_rate": 0.029199922572041178,
+    "max_depth": 3,
+    "min_child_weight": 33.16014684053048,
+    "subsample": 0.5252834778110732,
+    "colsample_bytree": 0.8194653788060381,
+    "gamma": 0.0010512980438210408,
+    "reg_alpha": 0.9231859498607357,
+    "reg_lambda": 6.538341334689918,
+    "n_estimators": 149
+  },
+  "trained_on": "2014-12-17 to 2022-12-24"
+}
