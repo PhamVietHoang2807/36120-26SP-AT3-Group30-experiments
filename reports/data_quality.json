@@ -1,0 +1,90 @@
+{
+  "source": "CoinMarketCap historical CSV exports supplied for AT3 experimentation",
+  "source_files_found": 86,
+  "usable_source_files": 80,
+  "empty_files_skipped": [
+    "Solana (SOL)/Solana_01_01_2016-01_01_2017_historical_data_coinmarketcap.csv",
+    "Solana (SOL)/Solana_01_01_2017-01_01_2018_historical_data_coinmarketcap.csv",
+    "Solana (SOL)/Solana_01_01_2018-01_01_2019_historical_data_coinmarketcap.csv",
+    "Solana (SOL)/Solana_01_01_2019-01_01_2020_historical_data_coinmarketcap.csv",
+    "Tron (TRX)/TRON_01_01_2015-01_01_2016_historical_data_coinmarketcap.csv",
+    "Tron (TRX)/TRON_01_01_2016-01_01_2017_historical_data_coinmarketcap.csv"
+  ],
+  "rows_before_deduplication": 29932,
+  "rows_after_deduplication": 28784,
+  "duplicate_rows_removed": 1148,
+  "missing_value_count": 0,
+  "calendar_dates_filled": false,
+  "tokens": {
+    "BTC": {
+      "rows": 4018,
+      "start_date": "2015-01-01",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 35,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "DOGE": {
+      "rows": 4053,
+      "start_date": "2014-11-27",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 347,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "ETH": {
+      "rows": 3799,
+      "start_date": "2015-08-08",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 35,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "SOL": {
+      "rows": 2091,
+      "start_date": "2020-04-11",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 35,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "TRX": {
+      "rows": 3031,
+      "start_date": "2017-09-14",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 35,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "XLM": {
+      "rows": 3721,
+      "start_date": "2014-11-27",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 279,
+      "missing_calendar_days": 332,
+      "missing_date_ranges": [
+        {
+          "start": "2022-12-31",
+          "end": "2023-11-27",
+          "days": 332
+        }
+      ]
+    },
+    "XMR": {
+      "rows": 4053,
+      "start_date": "2014-11-27",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 347,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    },
+    "XRP": {
+      "rows": 4018,
+      "start_date": "2015-01-01",
+      "end_date": "2025-12-31",
+      "duplicate_rows_removed": 35,
+      "missing_calendar_days": 0,
+      "missing_date_ranges": []
+    }
+  }
+}

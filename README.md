@@ -4,7 +4,36 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-A short description of the project.
+Shared experimentation repository for Group 30's cryptocurrency financial
+intelligence platform. It contains reproducible data preparation, feature
+engineering, target construction, modelling, Optuna optimisation and evaluation.
+
+## Student B: Market Risk Index
+
+Student B develops a LightGBM regression model that forecasts the Market Risk
+Index (MRI) seven days ahead. The model uses Return20, Volatility20, MaxPrice20
+and Gap Risk. Student B owns and exposes MA5, MA20 and TrendStrength.
+
+## Reproducible setup
+
+1. Install Python 3.12.13 and create a virtual environment.
+2. Run `pip install -r requirements.txt`.
+3. Place the supplied token folders under `data/raw/coinmarketcap/`.
+4. Run `python -m at3_group30_experiments.dataset`.
+
+This produces `data/processed/cryptocurrency_daily.csv` and the tracked audit
+`reports/data_quality.json`. Empty pre-launch files are documented and skipped;
+overlapping observations must agree; missing dates are reported but never filled.
+
+Run automated checks with `python -m pytest -q`.
+
+## Group details
+
+- Group: 30
+- Student A: add name and student ID before submission
+- Student B: Nipun Mudgal — add student ID before submission
+- Student C: add name and student ID before submission
+- Student D: add name and student ID before submission
 
 ## Project Organization
 
@@ -58,4 +87,3 @@ A short description of the project.
 ```
 
 --------
-

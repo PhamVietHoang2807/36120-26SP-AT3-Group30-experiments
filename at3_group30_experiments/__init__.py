@@ -1,1 +1,1 @@
-from at3_group30_experiments import config  # noqa: F401
+"""Reusable code for the Group 30 AT3 experiments."""
